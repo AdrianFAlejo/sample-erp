@@ -1,0 +1,44 @@
+//generate new .env
+
+cp .env.example .env
+
+change the DB name
+DB_DATABASE=abc
+
+-----------------------
+install composer 
+install wamp
+https://getcomposer.org/download/
+
+environment add setting 
+
+C:\composer
+C:\wamp64\bin\php\php7.4.0
+
+vscode ternimal
+composer install
+
+-------------------------
+php artisan key:generate
+
+//if you have changes in route
+php artisan route:cache 
+
+//set default db
+php artisan migrate:fresh --seed
+
+php artisan passport:install --force
+
+//run
+php artisan serve
+
+-------------------------
+Optionals 
+//add seeder
+php aritsan db:seed --class=SeederName
+
+//create migration
+php artisan make:migration create_employee_table
+
+
+
